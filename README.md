@@ -2,6 +2,7 @@
 
 ![](https://raw.githubusercontent.com/jaykumar1607/Water-Quality/main/water_sanitation.gif)
 
+[collabs](https://colab.research.google.com/drive/1zKXU72MwzKQTIlQ0_YjRUkQqznqY36Hx?usp=sharing)
 
 ## **Project Domain**
 Air merupakan salah satu kebutuhan dasar bagi setiap makhluk hidup, tidak terkecuali
