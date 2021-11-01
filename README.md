@@ -207,7 +207,7 @@ Pair Plots adalah cara yang sangat sederhana (satu baris kode sederhana!) untuk 
 Dari visualisasi outliers, distribusi, dan pairplot ( gabungan dari scatter plot & skew plot) menunjukkan feature-feature pada dataset yang dibagi menjadi 2 domain yaitu 1 & 0 memiliki korelasi yang rendah.
 
 ### Data Preprocessing
-1. Check Missing Values dan mengisi dengan 0 atau mode dari suatu kolom
+1. Check Missing Values dan mengisi dengan 0 atau mode dari suatu kolom (** Imputasi **)
 ![](https://cdn-images-1.medium.com/max/800/1*_RA3mCS30Pr0vUxbp25Yxw.png)
 * Pengertian Missing Values
 Dalam dunia data science, missing value erat kaitannya dalam proses perselisihan data (data wrangling) sebelum nantinya akan dilakukan analisis dan prediksi data. Data wrangling merupakan kegiatan penyeragaman data atau pembersihan data (cleaning data) dari data kotor (mentah) menjadi data yang nantinya siap digunakan untuk analisis. Data kotor (mentah) yang dimaksud adalah data yang terindikasi masih terdapat ketidakseragaman format, muncul missing values pada data, dan masih juga ditemukan adanya tambahan sufiks, prefiks dan lain-lain. Biasanya, seorang data scientist menghabiskan 60% waktunya dalam melakukan proses ini. Karena fakta menunjukkan bahwa 75% data yang dimiliki oleh perusahaan adalah data kotor.
