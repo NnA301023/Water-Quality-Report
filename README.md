@@ -37,7 +37,20 @@ infrastruktur penunjang upaya pemenuhan kebutuhan air bersih merupakan investasi
 yang sangat tidak menguntungkan bagi sektor privat untuk dapat mengambil bagian,
 karena tingkat pengembalian investasi yang sangat kecil.
 
-Pengaruh tidak langsung Pengaruh tidak langsung adalah pengaruh yang timbul
+Di Indonesia, tepatnya di bogor pada tahun 2018 terdapat pengamatan langsung pada air Saluran Kali Bokor, perubahan fisik sudah
+terjadi antara lain warna air yang tidak jernih, bau yang tidak sedap, serta estetika yang
+sudah tak layak pandang. Masyarakat sekitar pun mulai mengeluh akibat perubahan
+fisik yang terjadi pada air Saluran Kali Bokor tersebut. Peraturan Pemerintah Nomor 82
+(2001) mengenai Pengelolaan Kualitas Air dan Pengendalian Air menyebutkan bahwa
+setiap penganggung jawab usaha dan/atau kegiatan yang membuang air limbah ke air
+atau sumber air wajib mencegah dan menanggulangi terjadinya pencemaran air. Pada
+kenyataannya, memang masih banyak masyarakat belum bertanggung jawab
+menangani limbah yang dihasilkan. Upaya pembersihan pada saluran tersebut belum
+pernah dilakukan. Upaya pengelolaan kualitas air belum pernah dilaksanakan. Selain
+itu, masyarakat masih terus membuang limbahnya ke sungai tanpa melakukan
+pengolahan ([Rizal](http://digilib.its.ac.id/public/ITS-paper-31558-3310100018-Paper.pdf), 2018).
+
+Pengaruh tidak langsung adalah pengaruh yang timbul
 sebagai akibat pendayagunaan air yang dapat meningkatkan ataupun menurunkan
 kesejahteraan masyarakat. Misalnya air yang dimanfaatkan untuk pembangkit tenaga 
 listrik, industri, irigasi, perikanan, pertanian, dan rekreasi. Pemanfaat air untuk hal
