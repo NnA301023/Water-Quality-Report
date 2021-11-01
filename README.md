@@ -146,9 +146,16 @@ Akses ke air minum yang aman sangat penting untuk kesehatan, hak asasi manusia d
 . Sebelum kita mempelajari tentang pohon secara khusus, mari kita mulai dengan meninjau elemen dasar dalam pembelajaran terawasi.
 
 ## **Workflow Diagram**
-(diagram here)
+Untuk mempermudah pendefinisian langkah-langkah yang diperlukan dalam penelitian kali ini, penulis membuat visualisasi diagram tentang alur kerja secara keseluruhan.
+
+![](https://raw.githubusercontent.com/NnA301023/Water-Quality-Report/main/static/dico_1.png)
 
 ### Data Understanding
+
+Dataset yang penulis gunakan dalam penelitian ini diambil dari sumber terbuka kaggle, berikut link nya : https://www.kaggle.com/adityakadiwal/water-potability
+
+![](https://camo.githubusercontent.com/ddffd37fd7263b2f6932298830ce8ebb31684cbe/68747470733a2f2f757365722d696d616765732e67697468756275736572636f6e74656e742e636f6d2f35383635313934332f3133333830323232362d61376630386637352d306366302d346236622d383338342d3637386366303962313564642e706e67)
+
 **Konteks**
 
 Akses ke air minum yang aman sangat penting untuk kesehatan, hak asasi manusia dan komponen kebijakan yang efektif untuk perlindungan kesehatan. Hal ini penting sebagai masalah kesehatan dan pembangunan di tingkat nasional, regional dan lokal. Di beberapa daerah, telah terbukti bahwa investasi dalam penyediaan air dan sanitasi dapat menghasilkan keuntungan ekonomi bersih, karena pengurangan efek kesehatan yang merugikan dan biaya perawatan kesehatan lebih besar daripada biaya melakukan intervensi.
@@ -170,19 +177,27 @@ File water_potability.csv berisi metrik kualitas air untuk 3276 badan air yang b
 ### Exploratory Data Analysis
 1. Check Ratio Target
 
-(graph here)
+![](https://github.com/NnA301023/Water-Quality-Report/blob/main/static/dico_2.png)
+
+Gambar diatas merupakan visualisasi ratio target 1 & 0, dengan persentase seperti yang tertera di gambar. Ratio dari kedua target tersebut tidak 1:1 sehingga dapat terjadi bias pada proses predictive modeling kedepannya, serta dikarenakan dataset yang digunakan berjenis tabular maka penulis akan mengimplementasikan model imputasi sehingga ratio kedua target bernilai 1:1. Hal ini merupakan langkah yang tidak dapat diduga pada saat pendefinisian alur kerja diagram dikarenakan penulis pada permulaan fokus pada pengetahuan pada bidang terkait, permasalah, target, dan solusi.
 
 2. Visualisasi Outliers
 
-(graph here)
+outlier adalah pengamatan terhadap data yang tidak sesuai dengan data lainnya. Kadang-kadang disebut nilai ekstrim. Saat Anda membuat grafik outlier, itu akan tampak tidak sesuai dengan pola grafik. Beberapa outlier disebabkan oleh kesalahan (misalnya, menuliskan 50 bukannya 500) sementara yang lain mungkin menunjukkan bahwa sesuatu yang tidak biasa sedang terjadi.
+
+![](https://github.com/NnA301023/Water-Quality-Report/blob/main/static/dico_3.png)
 
 3. Visualisasi Distribusi Data
 
-(graph here)
+Plot kepadatan adalah representasi dari distribusi variabel numerik. Ini menggunakan estimasi kepadatan kernel untuk menunjukkan fungsi kepadatan probabilitas variabel (lihat lebih lanjut). Ini adalah versi histogram yang dihaluskan dan digunakan dalam konsep yang sama.
+
+![](https://github.com/NnA301023/Water-Quality-Report/blob/main/static/dico_4.png)
 
 4. Visualisasi Pairplot ( Gabungan dari Grafik Skew & Scatter )
 
-(graph here)
+Pair Plots adalah cara yang sangat sederhana (satu baris kode sederhana!) untuk memvisualisasikan hubungan antara setiap variabel. Ini menghasilkan matriks hubungan antara setiap variabel dalam data Anda untuk pemeriksaan instan data kami. Ini juga bisa menjadi titik awal yang bagus untuk menentukan jenis analisis regresi yang akan digunakan.
+
+![](https://github.com/NnA301023/Water-Quality-Report/blob/main/static/dico_5.png)
 
 5. Simpulan Dari Visualisasi
 Dari visualisasi outliers, distribusi, dan pairplot ( gabungan dari scatter plot & skew plot) menunjukkan feature-feature pada dataset yang dibagi menjadi 2 domain yaitu 1 & 0 memiliki korelasi yang rendah.
