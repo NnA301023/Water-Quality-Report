@@ -208,7 +208,22 @@ Dari visualisasi outliers, distribusi, dan pairplot ( gabungan dari scatter plot
 
 ### Data Preprocessing
 1. Check Missing Values dan mengisi dengan 0 atau mode dari suatu kolom
+![](https://cdn-images-1.medium.com/max/800/1*_RA3mCS30Pr0vUxbp25Yxw.png)
+* Pengertian Missing Values
+Dalam dunia data science, missing value erat kaitannya dalam proses perselisihan data (data wrangling) sebelum nantinya akan dilakukan analisis dan prediksi data. Data wrangling merupakan kegiatan penyeragaman data atau pembersihan data (cleaning data) dari data kotor (mentah) menjadi data yang nantinya siap digunakan untuk analisis. Data kotor (mentah) yang dimaksud adalah data yang terindikasi masih terdapat ketidakseragaman format, muncul missing values pada data, dan masih juga ditemukan adanya tambahan sufiks, prefiks dan lain-lain. Biasanya, seorang data scientist menghabiskan 60% waktunya dalam melakukan proses ini. Karena fakta menunjukkan bahwa 75% data yang dimiliki oleh perusahaan adalah data kotor.
+* Cara Mengatasi Missing Values
+- Mengabaikan dan membuang missing data
+Contoh metode yang sering digunakan pada kategori ini adalah metode Listwise deletion dan Pairwise deletion
+0 Estimasi parameter
+Contohnya algoritma Expectation-Maximization (EM Algorithm) yang digunakan untuk mengestimasi parameter dari missing data 
+- Imputasi
+Proses pengisian atau penggantian nilai-nilai yang hilang (missing values) pada sekumpulan data (dataset) dengan nilai-nilai yang mungkin (plausible values) berdasarkan informasi yang didapatkan pada dataset tersebut
+
+poin-poin diatas merupakan beragam metode yang bisa dilakukan pada suatu dataset sehingga tidak ada lagi missing values yang menyebabkan miss-interpretasi data. Missing value terjadi karena informasi untuk sesuatu tentang objek tidak diberikan, sulit dicari, atau memang informasi tersebut tidak ada. Missing value pada dasarnya tidak bermasalah bagi keseluruhan data, apalagi jika jumlahnya hanya sedikit, misal hanya 1 % dari seluruh data. Sehingga diharapkan dataset yang tidak terdapat missing values dapat mereprentasikan informasi yang lebih baik kepada manusia maupun machine ( data tidak bias ).
+
 2. Standarisasi Data
+StandardScaler menghilangkan mean (terpusat pada 0) dan menskalakan ke variansi (deviasi standar = 1), dengan asumsi data terdistribusi normal (gauss) untuk semua fitur. Perlu menskalakan kolom-kolom yang dibutuhkan. Perbedaan skala dapat menyebabkan kendala dengan estimator euclidean distance.
+
 ### Model Performance Analysis
 Pada penelitian kualitas air berdasarkan unsur kimiawi, penulis melakukan 2 percobaan dengan perbedaan terletak pada missing value yang diisi dengan 0 dan missing value yang diisi dengan nilai mode. Model prediktif terbukti cukup membantu dalam memprediksi pertumbuhan bisnis di masa depan, karena memprediksi hasil menggunakan penambangan data dan probabilitas, di mana setiap model terdiri dari sejumlah prediktor atau variabel. Oleh karena itu, model statistik dapat dibuat dengan mengumpulkan data untuk variabel yang relevan. Dengan acuan performa yang dianalisis pada penelitan kali ini sebatas di metriks 2 akurasi tertinggi pada setiap percobaan :
 
@@ -230,7 +245,7 @@ Pada penelitian kualitas air berdasarkan unsur kimiawi, penulis melakukan 2 perc
 2	|Random Forest	|0.687500
 3	|Xgboost	|0.653963
 
-#### Metrics Used
+### Evaluation Metrics
 Metriks yang digunakan pada penelitian ini adalah metriks akurasi, berikut deskripsi tentang metriks akurasi
 Akurasi adalah salah satu metrik untuk mengevaluasi model klasifikasi. Secara informal, akurasi adalah sebagian kecil dari prediksi model kami yang benar. Secara formal, akurasi memiliki definisi sebagai berikut:
 
@@ -276,3 +291,5 @@ Berikut beberapa asumsi metode yang dapat diimplementasikan pada pengembangan mo
 10. https://www.analyticsvidhya.com/blog/2021/06/how-to-load-kaggle-datasets-directly-into-google-colab/
 11. https://courses.lumenlearning.com/introstats1/chapter/outliers/
 12. https://analyticsindiamag.com/what-is-predictive-model-performance-evaluation-and-why-is-it-important/
+13. https://dqlab.id/kursus-belajar-data-mengenal-apa-itu-missing-value
+14. https://mragungsetiaji.github.io/python/machine%20learning/2018/08/23/machine-learning-missing-value.html
