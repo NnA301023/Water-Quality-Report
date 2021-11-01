@@ -170,7 +170,7 @@ Untuk mempermudah pendefinisian langkah-langkah yang diperlukan dalam penelitian
 
 ### Data Understanding
 
-Dataset yang penulis gunakan dalam penelitian ini diambil dari sumber terbuka kaggle, berikut link nya : https://www.kaggle.com/adityakadiwal/water-potability
+Dataset yang penulis gunakan dalam penelitian ini diambil dari sumber terbuka kaggle, berikut link nya : [water potability](https://www.kaggle.com/adityakadiwal/water-potability)
 
 ![](https://camo.githubusercontent.com/ddffd37fd7263b2f6932298830ce8ebb31684cbe/68747470733a2f2f757365722d696d616765732e67697468756275736572636f6e74656e742e636f6d2f35383635313934332f3133333830323232362d61376630386637352d306366302d346236622d383338342d3637386366303962313564642e706e67)
 
@@ -221,19 +221,10 @@ Pair Plots adalah cara yang sangat sederhana (satu baris kode sederhana!) untuk 
 Dari visualisasi outliers, distribusi, dan pairplot ( gabungan dari scatter plot & skew plot) menunjukkan feature-feature pada dataset yang dibagi menjadi 2 domain yaitu 1 & 0 memiliki korelasi yang rendah.
 
 ### Data Preprocessing
-1. Check Missing Values dan mengisi dengan 0 atau mode dari suatu kolom (** Imputasi **)
+1. Check Missing Values dan Imputasi
 ![](https://cdn-images-1.medium.com/max/800/1*_RA3mCS30Pr0vUxbp25Yxw.png)
-* Pengertian Missing Values
-Dalam dunia data science, missing value erat kaitannya dalam proses perselisihan data (data wrangling) sebelum nantinya akan dilakukan analisis dan prediksi data. Data wrangling merupakan kegiatan penyeragaman data atau pembersihan data (cleaning data) dari data kotor (mentah) menjadi data yang nantinya siap digunakan untuk analisis. Data kotor (mentah) yang dimaksud adalah data yang terindikasi masih terdapat ketidakseragaman format, muncul missing values pada data, dan masih juga ditemukan adanya tambahan sufiks, prefiks dan lain-lain. Biasanya, seorang data scientist menghabiskan 60% waktunya dalam melakukan proses ini. Karena fakta menunjukkan bahwa 75% data yang dimiliki oleh perusahaan adalah data kotor.
-* Cara Mengatasi Missing Values
-- Mengabaikan dan membuang missing data
-Contoh metode yang sering digunakan pada kategori ini adalah metode Listwise deletion dan Pairwise deletion
-0 Estimasi parameter
-Contohnya algoritma Expectation-Maximization (EM Algorithm) yang digunakan untuk mengestimasi parameter dari missing data 
-- Imputasi
-Proses pengisian atau penggantian nilai-nilai yang hilang (missing values) pada sekumpulan data (dataset) dengan nilai-nilai yang mungkin (plausible values) berdasarkan informasi yang didapatkan pada dataset tersebut
 
-poin-poin diatas merupakan beragam metode yang bisa dilakukan pada suatu dataset sehingga tidak ada lagi missing values yang menyebabkan miss-interpretasi data. Missing value terjadi karena informasi untuk sesuatu tentang objek tidak diberikan, sulit dicari, atau memang informasi tersebut tidak ada. Missing value pada dasarnya tidak bermasalah bagi keseluruhan data, apalagi jika jumlahnya hanya sedikit, misal hanya 1 % dari seluruh data. Sehingga diharapkan dataset yang tidak terdapat missing values dapat mereprentasikan informasi yang lebih baik kepada manusia maupun machine ( data tidak bias ).
+Berdasarkan pemetaan metode yang dapat digunakan dalam dataset pada gambar diatas, penulis memilih metode imputasi dengan feature statistik dikarenakan metode tersebut mudah digunakan, tujuan dari pengisian missing value adalah untuk mengurangi potensi bias atau miss-representasi pada dataset sehingga model dapat memprediksi secara optimal.
 
 2. Standarisasi Data
 
