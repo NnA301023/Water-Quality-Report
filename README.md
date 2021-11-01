@@ -1,4 +1,8 @@
 # **Laporan Proyek Machine Learning Terapan - M Alif Ramadhan**
+
+![](https://raw.githubusercontent.com/jaykumar1607/Water-Quality/main/water_sanitation.gif)
+
+
 ## **Project Domain**
 Air merupakan salah satu kebutuhan dasar bagi setiap makhluk hidup, tidak terkecuali
 manusia. Dapat dipastikan manusia tidak akan mampu bertahan hidup tanpa air,
