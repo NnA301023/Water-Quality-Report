@@ -203,7 +203,7 @@ Gambar diatas merupakan visualisasi ratio target 1 & 0, dengan persentase sepert
 
 2. Visualisasi Outliers
 
-outlier adalah pengamatan terhadap data yang tidak sesuai dengan data lainnya. Kadang-kadang disebut nilai ekstrim. Saat Anda membuat grafik outlier, itu akan tampak tidak sesuai dengan pola grafik. Beberapa outlier disebabkan oleh kesalahan (misalnya, menuliskan 50 bukannya 500) sementara yang lain mungkin menunjukkan bahwa sesuatu yang tidak biasa sedang terjadi.
+Outlier adalah pengamatan terhadap data yang tidak sesuai dengan data lainnya. Kadang-kadang disebut nilai ekstrim. Saat Anda membuat grafik outlier, itu akan tampak tidak sesuai dengan pola grafik. Beberapa outlier disebabkan oleh kesalahan (misalnya, menuliskan 50 bukannya 500) sementara yang lain mungkin menunjukkan bahwa sesuatu yang tidak biasa sedang terjadi.
 
 ![](https://github.com/NnA301023/Water-Quality-Report/blob/main/static/dico_3.png)
 
@@ -232,26 +232,30 @@ Berdasarkan pemetaan metode yang dapat digunakan dalam dataset pada gambar diata
 
 Standarisasi adalah menghilangkan mean (terpusat pada 0) dan menskalakan ke variansi (deviasi standar = 1), dengan asumsi data terdistribusi normal (gauss) untuk semua fitur. Perlu menskalakan kolom-kolom yang dibutuhkan. Perbedaan skala dapat menyebabkan kendala dengan estimator euclidean distance.
 
-### Model Performance Analysis
+3. Train Test Split
+
+Train test split adalah salah satu metode yang dapat digunakan untuk mengevaluasi performa model machine learning. Metode evaluasi model ini membagi dataset menjadi dua bagian yakni bagian yang digunakan untuk training data dan untuk testing data dengan proporsi tertentu. Pada penelitian kali ini penulis menggunakan ratio 80:20, 80% untuk training set dan 20% untuk testing set.
+
+### Model Development
 Pada penelitian kualitas air berdasarkan unsur kimiawi, penulis melakukan 2 percobaan dengan perbedaan terletak pada missing value yang diisi dengan 0 dan missing value yang diisi dengan nilai mode. Model prediktif terbukti cukup membantu dalam memprediksi pertumbuhan bisnis di masa depan, karena memprediksi hasil menggunakan penambangan data dan probabilitas, di mana setiap model terdiri dari sejumlah prediktor atau variabel. Oleh karena itu, model statistik dapat dibuat dengan mengumpulkan data untuk variabel yang relevan. Dengan acuan performa yang dianalisis pada penelitan kali ini sebatas di metriks 2 akurasi tertinggi pada setiap percobaan :
 
 1. percobaan pertama pengimplementasian angka 0 pada missing values
 
 |	|Model	|Accuracy
 ---|---|---|
-0	|Logistic Regression	|0.638720
-1	|Decision Tree	|0.562500
-2	|Random Forest	|0.660061
-3	|Xgboost	|0.652439
+0	|Logistic Regression	|0.640244
+1	|Decision Tree	|0.586890
+2	|Random Forest	|0.653963
+3	|Xgboost	|0.635671
 
 2. percobaan kedua pengimplementasian nilai statistical - mode pada missing values
 
 |	|Model	|Accuracy
 ---|---|---|
-0	|Logistic Regression	|0.602134
-1	|Decision Tree	|0.599085
-2	|Random Forest	|0.687500
-3	|Xgboost	|0.653963
+0	|Logistic Regression	|0.614329
+1	|Decision Tree	|0.591463
+2	|Random Forest	|0.666159
+3	|Xgboost	|0.661585
 
 ### Evaluation Metrics
 Metriks yang digunakan pada penelitian ini adalah metriks akurasi, berikut deskripsi tentang metriks akurasi
@@ -269,8 +273,8 @@ Dengan Deskripsi,
 
 |   |Condition	|Random Forest	|Xgboost
 ---|---|---|---
-0	|Before Implement Statistical Feature	|0.660061	|0.652439
-1	|After Implement Statistical Feature	|0.687500	|0.653963
+0	|Before Implement Statistical Feature	|0.653963	|0.635671
+1	|After Implement Statistical Feature	|0.666159	|0.661585
 
 ## **Conclusion & Future Works**
 **Conclusion** 
